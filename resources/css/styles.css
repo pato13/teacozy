@@ -1,3 +1,4 @@
+/* body styles */
 body{
   margin: 0;
   background-color: black;
@@ -5,14 +6,7 @@ body{
   font-family: helvetica;
   text-align: center;
 }
-.top header{
-  position: fixed;
-}
-.top{
-  display: flex;
-  justify-content: center;
-  position: fixed;
-}
+/*header and logo styles*/
 header{
   display: flex;
   width: 100%;
@@ -23,6 +17,8 @@ header{
   font-size: 22px;
   font-family: helvetica;
   background-color: black;
+  position: fixed;
+  justify-content: center;
 }
 .logo {
   display: flex;
@@ -48,6 +44,7 @@ nav{
 a{
   color: seashell;
 }
+/* main content styles*/
 .content{
   padding-top: 70px;
     opacity: 0.9;
@@ -76,6 +73,7 @@ h2, h3, h4{
   margin: 0;
   padding: 10px;
 }
+/* featured styles */
 .featured{
   display: flex;
   flex-direction: column;
@@ -86,23 +84,15 @@ h2, h3, h4{
 }
 .images-top-featured{
   display: flex;
+  flex-wrap: wrap;
   padding-bottom: 30px;
   justify-content: center;
 }
-.images-bottom-featured{
-  display: flex;
-  justify-content: center;
-}
-.images-top-featured span{
+.images-top-featured p{
   display: block;
   font-weight: bold;
-
 }
-.images-bottom-featured span{
-  display: block;
-  justify-content: center;
-}
-img span{
+img p{
   padding-bottom: 10px;
 }
 .item{
@@ -112,10 +102,12 @@ img span{
   height: 200px;
   margin: 10px;
 }
+/* locations styles*/
 .locations{
 display: flex;
 align-items: center;
 margin-top: 70px;
+align-content: center;
 }
 .location{
   display: flex;
@@ -144,12 +136,14 @@ margin-top: 70px;
 .location-box{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   flex-wrap: wrap;
-}  
+
+}
 .image-location h2{
   padding-bottom: 15px;
 }
+/*footer styles*/
 footer{
 margin-top: 5px;
 }
